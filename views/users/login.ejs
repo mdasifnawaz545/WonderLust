@@ -1,0 +1,23 @@
+<% layout("./layouts/boilerplate") %>
+<div class="row">
+    <div class="col-8 offset-2">
+        <br>
+        <h3>Login for WonderLust</h3>
+        <br>
+        <form action="/login" method="POST">
+            <div class="mb-3">
+                <label class="form-label" for="username">Username</label>
+                <input class="form-control" type="text" placeholder="username"
+                    name="username" id="username">
+
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="password">Password</label>
+                <input class="form-control" placeholder="password"
+                    type="password" name="password" id="password">
+            </div>
+            <button class="btn btn-success btn-sm mb-3">Login</button>
+        </form>
+        <br><br><br><br><br><br><br>
+    </div>
+</div>

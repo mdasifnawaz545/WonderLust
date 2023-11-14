@@ -1,0 +1,15 @@
+@media screen and (max-width:410px){
+    .filters{
+        margin-bottom: 8rem;
+    }
+    .fm input{
+        width: 10rem !important;
+    }
+    .nav-link{
+        width:100%;
+        margin-top: 0.25rem;
+        margin-bottom: 0.25rem;
+
+    }
+    
+}

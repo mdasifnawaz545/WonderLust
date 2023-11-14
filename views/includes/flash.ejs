@@ -1,0 +1,21 @@
+<!-- Success Flash Message -->
+
+<% if(successListing && successListing.length) {%>
+<div class="alert alert-success mt-3 col-8 offset-2 alert-dismissible fade show"
+    role="alert">
+    <%= successListing %>
+    <button type="button" class="btn-close " aria-label="Close"
+        data-bs-dismiss="alert"></button>
+</div>
+<% } %>
+
+<!-- Failure Flash Message -->
+
+<% if(errorListing && errorListing.length) {%>
+<div class="alert alert-danger mt-3 col-8 offset-2 alert-dismissible fade show"
+    role="alert">
+    <%= errorListing %>
+    <button type="button" class="btn-close " aria-label="Close"
+        data-bs-dismiss="alert"></button>
+</div>
+<% } %>

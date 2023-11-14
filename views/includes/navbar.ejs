@@ -1,0 +1,55 @@
+<nav
+    class="navbar navbar-expand-md bg-body-light border-bottom sticky-top newNav">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/listings"><i
+                class="fa-regular fa-snowflake" style="color: #219723;"></i></a>
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-label="Toggle Navigation" aria-expanded="false"
+            aria-controls="navbarNavAltMarkup">
+            <span
+                class="navbar-toggler-icon tgicon">
+            </span>
+        </button>
+        <div class="collapse navbar-collapse cntr" id="navbarNavAltMarkup">
+            <div class="navbar-nav text-center nvclr ms-auto">
+                <a class="nlink1 nav-link" href="/listings"><i
+                        class="clp fa-solid fa-house text-center icn"
+                        style="color: #222;"></i>&nbsp;&nbsp;Home</a>
+                <a class="nlink2 nav-link" href="/listings"><i
+                        class="clp fa-solid fa-bars-staggered icn"
+                        style="color: #222;"></i>&nbsp;&nbsp;All
+                    Listing</a>
+                <a class="nlink3 nav-link icn" href="/listings/new"><i
+                        class="clp fa-regular fa-square-plus"
+                        style="color: #222;"></i>&nbsp;&nbsp;Add
+                    Listing</a>
+                <form class="d-flex text-center fm " role="search">
+                    <input type="text" class="form-control me-3 rounded-pill"
+                        style="width: 23rem;"
+                        type="search" placeholder="Search destination"
+                        aria-label="search">
+                    <button
+                        class="btn btn-outline-success btn-md rounded-pill schBTN"><i
+                            class="fa-solid fa-magnifying-glass"
+                            style="color: #222;"></i>&nbsp;&nbsp;Search</button>
+                </form>
+                <% if(!currUser) {%>
+                <a class="nlink4 nav-link text-center lgggsn" href="/signup"><i
+                        class="clp fa-solid fa-user-plus icn"
+                        style="color: #222;"></i>&nbsp;&nbsp;Sign up</a>
+                <a class="nlink5 nav-link " href="/login"><i
+                        class="clp fa-solid fa-user"
+                        style="color: #222;"></i>&nbsp;&nbsp;Log
+                    in</a>
+                <% } %>
+                <% if(currUser) { %>
+                <a class="nlink6 nav-link lgggsn" href="/logout"><i
+                        class="fa-solid fa-arrow-right-from-bracket icn"
+                        style="color: #222;"></i>&nbsp;&nbsp;Log Out</a>
+                <% } %>
+
+            </div>
+        </div>
+    </div>
+</nav>

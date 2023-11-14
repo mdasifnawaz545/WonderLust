@@ -1,0 +1,339 @@
+html {
+    scroll-behavior: smooth;
+   
+}
+
+/* [navbar.ejs] CSS Code */
+
+.tgicon {
+    font-size: 1rem !important;
+}
+
+.navbar {
+    height: 4rem;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-square-plus {
+    font-size: 1.1rem !important;
+}
+
+.fa-bars-staggered {
+    font-size: 1rem !important;
+
+}
+
+.fa-house {
+    font-size: 1rem !important;
+}
+
+/* .nicon {
+    margin-left: 1rem;
+} */
+
+/* .navbar-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center; Want to make the navbar flex to centrally align all the items.
+ } */
+
+/* .icn{
+    font-size: 0.8rem;
+} */
+.fa-regular {
+    /* margin-left: 1rem; */
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: #222 !important;
+    border-radius: 20px;
+}
+
+.fm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.fm input{
+    width: 20rem !important;
+}
+.navbar-nav{
+    display: flex;
+    justify-content: center ;
+}
+.nav-link:hover {
+    background: #2197238e;
+}
+
+.nvclr {
+    background: #fff;
+}
+
+
+/* [footer.ejs] CSS Code */
+
+
+
+
+
+
+.ftrcrd{
+    background: none !important;
+    border: none !important;
+    width: 15rem !important;
+    font-size: small;
+    line-height: 1rem !important;
+    margin-top: 1.5rem !important;
+    margin-right: 4rem;
+
+}
+.mnftrcrd{
+    display: flex ;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 2rem;
+    margin-bottom: 3rem !important;
+    border-top-left-radius : 10px;
+    border-top-right-radius : 10px;
+
+}
+.copyright{
+    font-weight: 600;
+    margin-top: 0.5rem;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #e1e1e1e0;
+    
+}
+
+.f-info-links a {
+    text-decoration: none;
+    color: #222;
+    margin-right: 1rem;
+}
+.nvclr{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+.nav-link{
+    margin-right: 1rem;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+}
+.lgggsn{
+    margin-left: 1rem;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+}
+
+.f-info-social a {
+    text-decoration: none;
+    color: #222;
+    margin-right: 1rem;
+}
+.nvclr{
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.schBTN {
+    font-size: 0.9rem !important;
+}
+
+.f-info-brand {
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.f-info-brand:hover {
+    transform: scale(1.125);
+    transition: all 0.3s;
+
+}
+
+.f-info-link:hover {
+    text-decoration: underline;
+}
+
+.f-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 2rem;
+}
+
+/* [index.ejs] CSS Code */
+
+
+
+
+.filters {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 3.5rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+
+}
+
+.filter {
+    text-align: center;
+    margin-left: 1rem;
+    opacity: 0.65;
+}
+
+.filter:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.swit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tax {
+    border: 1px solid #222;
+    border-radius: 10px;
+    height: 2.3rem;
+    width: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.pgst {
+    display: flex;
+
+}
+
+.taxInfo {
+    display: none;
+}
+
+/* .orgPrice{
+        text-decoration:line-through;
+        text-decoration-color: #444546;
+        display: none;
+
+
+    } */
+
+
+
+
+
+
+
+
+
+.card-listing {
+    border: none !important;
+    margin-bottom: 2rem;
+
+}
+
+.card-img-top {
+    border-radius: 0.5rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-body {
+    padding: 6px !important;
+}
+
+.row a {
+    text-decoration: none;
+}
+
+.card-img-overlay {
+    opacity: 0;
+}
+
+.card-img-overlay:hover {
+    opacity: 0.15;
+    background-color: #fff;
+}
+
+/* [Show.ejs] CSS Code */
+
+.imgtop {
+    height: 40vh;
+}
+
+.btns {
+    display: flex;
+}
+
+/* [Error.ejs] CSS Code */
+
+.fa-circle-exclamation {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    margin-top: 4px;
+}
+
+/* Review Card Style [reviewEdit.ejs] CSS Code*/
+
+.revbody {
+    width: 13rem !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.reduceImage img {
+    border-radius: 10px;
+}
+
+.reduceImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px;
+}
+
+

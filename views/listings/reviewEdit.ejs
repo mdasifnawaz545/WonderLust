@@ -1,0 +1,137 @@
+<% layout('/layouts/boilerplate') %>
+
+<div class="row">
+    <div>
+        <br>
+        <h1>Listing Details</h1>
+        <br>
+    </div>
+    <div class="card card-listing">
+
+        <img src="<%=listingData.image.url%>" alt="Image Not Found"
+            class="card-img-top imgtop">
+
+        <div class="card-body">
+            <h4 class="card-title"><%= listingData.title %></h4>
+            <p class="card-text"><%= listingData.description %></p>
+            <br>
+            <p class="card-text">Price - <b>&#8377;<%=
+                    listingData.price.toLocaleString('en-IN')%></b>/per night</p>
+            <p class="card-text">Location - <%= listingData.location %></p>
+            <p class="card-text">Country - <%= listingData.country %></p>
+
+            <div class="btns">
+                <a href="/listings/<%=listingData._id%>/edit">
+                    <button type="submit"
+                        class="btn btn-outline-success">Edit
+                    </button>
+                </a>
+                <form
+                    action="/listings/<%=listingData._id%>/delete?_method=delete"
+                    method="post">
+                    <button type="submit"
+                        class="btn btn-outline-danger offset-2">Delete</button>
+                </form>
+                <br>
+
+            </div>
+        </div>
+    </div>
+    <div>
+        <!-- <h3>Add A Review :</h3>
+        <br>
+        <form action="/listings/<%=listingData.id%>/review/new" method="post"
+            novalidate class="needs-validation">
+
+            <div>
+                <label class="form-label" for="Review[rating]">Rating : </label>
+                <input class="form-control" type="range" min="1" max="5"
+                    required name="Review[rating]" id="Review[rating]">
+
+            </div>
+            <div>
+                <label class="form-label" for="Review[comment]">Comments :
+                </label>
+                <textarea required class="form-control" name="Review[comment]"
+                    id="Review[comment]" cols="30"
+                    rows="4"></textarea>
+                <div class="valid-feedback">Nice Comment !</div>
+                <div class="invalid-feedback">Add Comment !</div>
+            </div>
+
+            <div class="mt-4 mb-4">
+                <button class="btn btn-success btn-sm" type="submit">Submit</button>
+            </div>
+        </form>
+    </div> -->
+
+        <div class="review mb-5">
+            <h3>Customer Reviews</h3>
+            <div class="row">
+
+                <div class="card col-4 ms-2 mb-1 mt-3">
+                    <div class="card-body revbody">
+                        <h5 class="card-title"><% rev.owner.username %></h5>
+                        <form
+                            action="/listings/<%=listingData._id%>/review/<%=rev.id%>/edit?_method=PUT"
+                            method="post">
+                            <textarea name="Review[comment]"
+                                id="Review[comment]"  class="form-control" cols="30"
+                                rows="2"><%=rev.comment%></textarea>
+                                
+                            <h6 class="card-text mt-2 mb-2">Rating : <%=rev.rating %></h6>
+
+
+
+
+
+                            <!-- <input type="range" min="0" max="5"
+                                class="form-control" name="Review[rating]"
+                                id="Review[rating]"> -->
+
+                            <!-- Using star review count instead of rating range slider using this code -->
+
+
+                                <fieldset class="starability-slot">
+                                    <input type="radio" id="no-rate" class="input-no-rate"
+                                        name="Review[rating]" value="1" checked
+                                        aria-label="No rating." />
+                                    <input type="radio" id="first-rate1" name="Review[rating]"
+                                        value="1" />
+                                    <label for="first-rate1" title="Terrible">1 star</label>
+                                    <input type="radio" id="first-rate2" name="Review[rating]"
+                                        value="2" />
+                                    <label for="first-rate2" title="Not good">2 stars</label>
+                                    <input type="radio" id="first-rate3" name="Review[rating]"
+                                        value="3" />
+                                    <label for="first-rate3" title="Average">3 stars</label>
+                                    <input type="radio" id="first-rate4" name="Review[rating]"
+                                        value="4" />
+                                    <label for="first-rate4" title="Very good">4 stars</label>
+                                    <input type="radio" id="first-rate5" name="Review[rating]"
+                                        value="5" />
+                                    <label for="first-rate5" title="Amazing">5 stars</label>
+                                </fieldset>
+
+
+
+
+
+
+
+
+
+                                <button
+                                        class="btn btn-outline-success btn-sm mt-2"
+                                        type="submit">Edit</button>
+                        </form>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>

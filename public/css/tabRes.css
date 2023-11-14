@@ -1,0 +1,25 @@
+@media screen and (min-width:768px) and (max-width:1023px){
+
+.filters{
+    margin-bottom: 5rem;
+}
+.fm input{
+    width: 10rem !important;
+}
+.schBTN {
+    width: 6rem !important;
+}
+.nav-link{
+    font-size: 0.7rem !important;
+}
+
+.icn{
+    margin-left: 1rem;
+}
+
+.nav-link{
+    margin-right: 1rem;
+}
+
+    
+}
