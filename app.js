@@ -141,6 +141,6 @@ app.use("/", userRouter);
 
 // Page Not Found Error Handler
 
-app.all("*", (req, res, next) => {
-    next(new ExpressError(404, "Page Not Found"));
-});
+// app.all("*", (req, res, next) => {
+//     next(new ExpressError(404, "Page Not Found"));
+// });
