@@ -129,7 +129,7 @@ const { func } = require("joi");
 
 // Listing Route[CRUD] Operations
 
-app.use("/", listingRouter);
+app.use("/listings", listingRouter);
 
 // Review Route [CRUD] Operation
 
@@ -141,6 +141,6 @@ app.use("/", userRouter);
 
 // Page Not Found Error Handler
 
-// app.all("*", (req, res, next) => {
-//     next(new ExpressError(404, "Page Not Found"));
-// });
+app.all("*", (req, res, next) => {
+    next(new ExpressError(404, "Page Not Found"));
+});
