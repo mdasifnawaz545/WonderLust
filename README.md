@@ -15,7 +15,7 @@ WonderLust is a Website where you can add a new listing of Places, Hotels, Restu
 * Github
 * Render
 # How to View the Website
-WonderLust Website is officialy deployed using "Render" by virtue of which you can easily access the website using the link mentioned at my repo and also it is listed over here LINK:"https://wonderlust-f7bu.onrender.com".
+WonderLust Website is officialy deployed using "Render" by virtue of which you can easily access the website using the link mentioned at my repo and also it is listed over here LINK: "https://wonderlust-f7bu.onrender.com".
 # How to Use
 * Home
 * All Listing
@@ -24,4 +24,9 @@ WonderLust Website is officialy deployed using "Render" by virtue of which you c
 * Sign Up
 * Login
 * Logout
+# Preview
+<img width="960" alt="WonderLust Pic 1" src="https://github.com/mdasifnawaz545/WonderLust/assets/126075328/a77c6143-1d5d-4c75-bb9c-cf63dfce3931">
+<img width="960" alt="WonderLust Pic 2" src="https://github.com/mdasifnawaz545/WonderLust/assets/126075328/e37ec380-0336-409e-b156-195983052dea">
+<img width="960" alt="WonderLust Pic 3" src="https://github.com/mdasifnawaz545/WonderLust/assets/126075328/d8320d4c-9b32-4dc6-a2b7-681ae3a39829">
+
   
