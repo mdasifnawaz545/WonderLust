@@ -1,6 +1,6 @@
 const { model } = require("mongoose");
 
-class expressError extends Error{
+class ExpressError extends Error{
     constructor(statusCode,message){
         super();
         this.statusCode=statusCode;
@@ -8,4 +8,4 @@ class expressError extends Error{
     }
 };
 
-module.exports=expressError;
+module.exports=ExpressError;
