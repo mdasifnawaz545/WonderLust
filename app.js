@@ -97,7 +97,7 @@ const userRouter = require('./routes/user.js');
 
 // Middleware Files Require
 
-const ExpressError = require('./utils/ExpressError.js');
+const ExpressError = require('./utils/expressError.js');
 
 app.use((err, req, res, next) => {
     let { statusCode = 500, message = "Error Caught" } = err;
