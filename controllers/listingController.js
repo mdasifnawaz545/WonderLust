@@ -42,7 +42,7 @@ module.exports.new = async (req, res) => {
     data.owner = req.user._id;
     await data.save();
     req.flash("success", "New Listing Added Successfully");
-    res.redirect("/listings");
+    res.redirect("/");
 }
 
 // Edit Route Controller
@@ -74,7 +74,7 @@ module.exports.delete = async (req, res) => {
     let { id } = req.params;
     await Listing.findByIdAndDelete(id);
     req.flash("success", "Listing Deleted Successfully");
-    res.redirect("/listings");
+    res.redirect("/");
 }
 
 
