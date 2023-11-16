@@ -15,16 +15,16 @@ const upload = multer({ storage });
 
 // Index Route
 
-router.get("/listings", wrapAsync(ListingController.index));
+router.get("/", wrapAsync(ListingController.index));
 
 // Show Route
 
-router.get("/listings/:id/show", wrapAsync(ListingController.show));
+router.get("/:id/show", wrapAsync(ListingController.show));
 
 // Create/New Route
 
 router
-    .route("/listings/new")
+    .route("/new")
     .get(isLoggedin, wrapAsync(ListingController.newForm))
     .post(upload.single("listing['image.url']"),isLoggedin,wrapAsync(ListingController.new))
 
@@ -32,7 +32,7 @@ router
 // Edit Route
 
 router
-    .route("/listings/:id/edit")
+    .route("/:id/edit")
     .get(isLoggedin, isOwner, wrapAsync(ListingController.editForm))
     .put(upload.single("listing['image.url']"),wrapAsync(ListingController.edit));
 
