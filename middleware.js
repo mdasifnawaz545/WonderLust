@@ -8,7 +8,7 @@ module.exports.isLoggedin = ((req, res, next) => {
     if (!req.isAuthenticated()) {
         req.session.redirectUrl = req.originalUrl;
         req.flash("error", "You need to Login !");
-        return res.redirect('/login');
+        return res.redirect('/listings/login');
     }
     next();
 });
