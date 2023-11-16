@@ -13,7 +13,7 @@ module.exports.signup=async (req, res, next) => {
                 return next(err);
             }
             req.flash("success", "Welcome, To The WonderLust World");
-            let lastURL=res.locals.redirectLastUrl || "/listings"
+            let lastURL=res.locals.redirectLastUrl || "/"
             res.redirect(lastURL);
         });
     }
@@ -30,7 +30,7 @@ module.exports.loginForm=async (req, res) => {
 }
 
 module.exports.login=async (req, res) => {
-    let redirect="/listings";
+    let redirect="/";
     req.flash("success", "Welcome Back to WonderLust ! You are Logged In");
     res.redirect(redirect);
 }
@@ -44,6 +44,6 @@ module.exports.logout= async(req, res, next) => {
             return next(err);
         }
         req.flash("success", "Logout Successfully !");
-        res.redirect("/listings");
+        res.redirect("/");
     })
 }
