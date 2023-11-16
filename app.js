@@ -129,7 +129,7 @@ const { func } = require("joi");
 
 // Listing Route[CRUD] Operations
 
-app.use("/", listingRouter);
+// app.use("/", listingRouter);
 
 // Review Route [CRUD] Operation
 
