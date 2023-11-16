@@ -112,7 +112,7 @@ app.engine("ejs", ejsMate);
 const methodOverride = require('method-override');
 app.use(methodOverride('_method'));
 app.use(express.static(path.join(__dirname, "public")));
-app.use(express.static(path.join(__dirname, "/")));
+// app.use(express.static(path.join(__dirname, "/")));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
@@ -129,7 +129,7 @@ const { func } = require("joi");
 
 // Listing Route[CRUD] Operations
 
-// app.use("/", listingRouter);
+app.use("/listings", listingRouter);
 
 // Review Route [CRUD] Operation
 
