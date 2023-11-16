@@ -129,7 +129,7 @@ const { func } = require("joi");
 
 // Listing Route[CRUD] Operations
 
-app.use("/listings", listingRouter);
+app.use("/", listingRouter);
 
 // Review Route [CRUD] Operation
 
@@ -137,7 +137,7 @@ app.use("/listings/:id/review", reviewRouter);
 
 // User Route [CRUD] Operation
 
-app.use("/", userRouter);
+app.use("/listings", userRouter);
 
 // Page Not Found Error Handler
 
