@@ -7,12 +7,9 @@ WonderLust is a Website where you can add a new listing of Places, Hotels, Restu
 * JavaScript
 * Exress Js
 * Node Js
-* EJS
-* Rest
 * MongoDB
 * Cloudinary
 * MongoAtals
-* Github
 * Render
 # How to View the Website
 WonderLust Website is officialy deployed using "Render" by virtue of which you can easily access the website using the link mentioned at my repo and also it is listed over here LINK: "https://wonderlust-f7bu.onrender.com".
