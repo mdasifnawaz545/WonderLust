@@ -19,12 +19,12 @@ router.get("/", wrapAsync(ListingController.index));
 
 // Show Route
 
-router.get("/:id/show", wrapAsync(ListingController.show));
+router.get("/listings/:id/show", wrapAsync(ListingController.show));
 
 // Create/New Route
 
 router
-    .route("/new")
+    .route("/listings/new")
     .get(isLoggedin, wrapAsync(ListingController.newForm))
     .post(upload.single("listing['image.url']"),isLoggedin,wrapAsync(ListingController.new))
 
@@ -32,7 +32,7 @@ router
 // Edit Route
 
 router
-    .route("/:id/edit")
+    .route("/listings/:id/edit")
     .get(isLoggedin, isOwner, wrapAsync(ListingController.editForm))
     .put(upload.single("listing['image.url']"),wrapAsync(ListingController.edit));
 
