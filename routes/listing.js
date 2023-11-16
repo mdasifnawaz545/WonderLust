@@ -24,7 +24,7 @@ router.get("/listings/:id/show", wrapAsync(ListingController.show));
 // Create/New Route
 
 router
-    .route("/new")
+    .route("/listings/new")
     .get(isLoggedin, wrapAsync(ListingController.newForm))
     .post(upload.single("listing['image.url']"),isLoggedin,wrapAsync(ListingController.new))
 
