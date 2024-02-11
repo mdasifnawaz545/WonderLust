@@ -5,6 +5,8 @@ html {
 }
 body{
     min-height:100%;
+    display:flex;
+    flex-direction:column;
 /* [navbar.ejs] CSS Code */
 
 .tgicon {
