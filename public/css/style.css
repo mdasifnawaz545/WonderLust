@@ -1,8 +1,10 @@
 html {
     scroll-behavior: smooth;
+    height:100%;
    
 }
-
+body{
+    min-height:100%;
 /* [navbar.ejs] CSS Code */
 
 .tgicon {
@@ -129,7 +131,7 @@ html {
 
 footer {
     background-color: #e1e1e1e0;
-    
+    margin-top:auto;
 }
 
 .f-info-links a {
