@@ -1,6 +1,6 @@
 @media screen and (min-width:411px) and (max-width:767px){
 .filters{
-    margin-bottom: 8rem;
+    margin-bottom: 8rem !important;
 }
 .fm input{
     width: 15rem !important;
