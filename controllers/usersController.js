@@ -3,25 +3,25 @@ const User=require("../models/user")
 
 // Signup Controller Routes 
 
-module.exports.signup=async (req, res, next) => {
-    try {
-        let { email, username, password } = req.body;
-        let newUser = new User({ email, username });
-        let userRegistered = await User.register(newUser, password);
-        req.login(userRegistered, (err) => {
-            if (err) {
-                return next(err);
-            }
-            req.flash("success", "Welcome, To The WonderLust World");
-            let lastURL=res.locals.redirectLastUrl || "/"
-            res.redirect(lastURL);
-        });
-    }
-    catch (err) {
-        req.flash("error", err.message);
-        res.redirect("/signup");
-    }
-}
+// module.exports.signup=async (req, res, next) => {
+//     try {
+//         let { email, username, password } = req.body;
+//         let newUser = new User({ email, username });
+//         let userRegistered = await User.register(newUser, password);
+//         req.login(userRegistered, (err) => {
+//             if (err) {
+//                 return next(err);
+//             }
+//             req.flash("success", "Welcome, To The WonderLust World");
+//             let lastURL=res.locals.redirectLastUrl || "/"
+//             res.redirect(lastURL);
+//         });
+//     }
+//     catch (err) {
+//         req.flash("error", err.message);
+//         res.redirect("/signup");
+//     }
+// }
 
 // Login Controller Routes 
 
