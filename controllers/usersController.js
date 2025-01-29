@@ -30,7 +30,7 @@ module.exports.loginForm=async (req, res) => {
 }
 
 module.exports.login=async (req, res) => {
-    let redirect="/";
+    let redirect=res.locals.redirectLastUrl || "/";
     req.flash("success", "Welcome Back to WonderLust ! You are Logged In");
     res.redirect(redirect);
 }

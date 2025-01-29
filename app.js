@@ -60,8 +60,6 @@ const sessionOption = {
 app.use(session(sessionOption));
 app.use(flash());
 
-
-
 main().then(() => {
     console.log("Connected With DataBase");
 }).catch((err) => {
@@ -105,7 +103,7 @@ app.use((err, req, res, next) => {
     // res.status(statusCode).send(message);
 });
 
-// EJS Mate used for using a Bolerplate in our Development Process.
+// EJS Mate used for using a Boilerplate in our Development Process.
 
 const ejsMate = require('ejs-mate');
 app.engine("ejs", ejsMate);
@@ -127,7 +125,7 @@ app.set("views", path.join(__dirname, "views"));
 const Review = require('./models/review.js');
 const { func } = require("joi");
 
-// Listing Route[CRUD] Operations
+// Listing Route [CRUD] Operations
 
 app.use("/", listingRouter);
 
