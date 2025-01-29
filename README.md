@@ -12,7 +12,7 @@ WonderLust is a Website where you can add a new listing of Places, Hotels, Restu
 * MongoAtals
 * Render
 # How to View the Website
-WonderLust Website is officialy deployed using "Render" by virtue of which you can easily access the website using the link mentioned at my repo and also it is listed over here LINK: "https://wonderlust-f7bu.onrender.com".
+WonderLust Website is officialy deployed using "Render" by virtue of which you can easily access the website using the link mentioned at my repo and also it is listed over here LINK: "https://wonderlust-iac3.onrender.com".
 # How to Use
 * Home
 * All Listing
