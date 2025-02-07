@@ -60,7 +60,6 @@ The WonderLust website is officially deployed on **Render**. Access the live ver
 
 ## 🖼️ Preview  
 
-Here’s a sneak peek of the WonderLust platform:  
 
 <img width="960" alt="WonderLust Screenshot 1" src="https://github.com/mdasifnawaz545/WonderLust/assets/126075328/a77c6143-1d5d-4c75-bb9c-cf63dfce3931">  
 <img width="960" alt="WonderLust Screenshot 2" src="https://github.com/mdasifnawaz545/WonderLust/assets/126075328/e37ec380-0336-409e-b156-195983052dea">  
