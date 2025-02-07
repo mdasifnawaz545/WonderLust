@@ -44,6 +44,9 @@ store.on("error",(err)=>{
     console.log("Error in Mongo Session Store",err);
 });
 
+
+// From the below code I am only configuring the session not it's type but it's configuration that how it is going to behave underthehood.
+
 const sessionOption = {
     store,
     secret: process.env.SECRET,
